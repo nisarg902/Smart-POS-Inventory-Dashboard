@@ -4,7 +4,7 @@ import { useCookies } from "react-cookie";
 export default function Login({ onSwitch }) {
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
-    const [, setCookie] = useCookies(["username"]);
+    const [Cookie, setCookie] = useCookies(["username"]);
 
     const handleLogin = (e) => {
         e.preventDefault();
